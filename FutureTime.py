@@ -23,19 +23,20 @@ def main():
   futurehour = futurehour % 24
   print(futurehour)
 
-
-  futuremins = currentMinute + Mins
-  futuremin = futuremins % 60
+  
 
    #Ask user for minutes
   Mins = input ("Enter mintues")
 
   #Calculate the time after the user-supplied time has passed.
+  futureHour = (currentHour + hours + (currentMinute + min) // 60) % 24
+  futureMinute = (currentMinute + min) % 60
 
   #Do not use any if statements in calculating the time.
+  
 
   #Output the future time in standard format "HH:MM"
-
+print(f"future Time: {futureHour:02} {futureMintues + min}")
 
 if __name__ == '__main__':
   main()
