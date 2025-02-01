@@ -25,14 +25,14 @@ def main():
 
   #Calculate the time after the user-supplied time has passed.
   totalMintues = currentMinute + mins
-  futureHour = (currentHour + hours + (currentMinute + min) // 60) % 24
-  futureMinute = (currentMinute + min) % 60
+  futureHour = (currentHour + hours + totalMintues // 60) % 24
+  futureMinute = totalMintues % 60
 
   #Do not use any if statements in calculating the time.
   
 
   #Output the future time in standard format "HH:MM"
-print(f"Future Time: {:02}:{futureHour:02}:{futureMintues:02}")
+print("Future Time: {futureHour:02}:{futureMintue:02}")
 
 if __name__ == '__main__':
   main()
